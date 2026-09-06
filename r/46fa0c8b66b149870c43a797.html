@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Auditoría — TiendaFeedback</title>
 <style>
@@ -37,25 +36,18 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
 <header>
   <p class="kicker">Auditoría Express · 22 puntos</p>
   <h1>TiendaFeedback</h1>
-  <p class="meta">https://tiendafeedback.com.ar · plataforma detectada: desconocida · análisis del 5 de septiembre de 2026</p>
+  <p class="meta">https://tiendafeedback.com.ar · plataforma detectada: desconocida · análisis del 6 de septiembre de 2026</p>
 </header>
 
 <div class="resumen">
-  <div class="stat f"><b>1</b><span>falla</span></div>
+  <div class="stat f"><b>0</b><span>fallas</span></div>
   <div class="stat a"><b>3</b><span>a revisar</span></div>
   <div class="stat o"><b>18</b><span>en orden</span></div>
 </div>
 
-<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://tiendafeedback.com.ar/brand/1049-on-stage/s-2/marca-on_stage/producto-destacado</strong> como página de producto de referencia. No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
+<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://tiendafeedback.com.ar/brand/1049-on-stage/s-2/marca-on_stage/producto-destacado</strong> como página interna de referencia (no se pudo confirmar que sea una ficha de producto, así que no se afirma nada que dependa de eso). No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
 
-<h2>Fallas — arreglar primero</h2>
-  <article class="chk falla">
-    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge falla">Falla</span></div>
-    <dl>
-      <dt>Qué medí</dt><dd>https://tiendafeedback.com.ar/brand/1049-on-stage/s-2/marca-on_stage/producto-destacado no publica datos estructurados de tipo Product.</dd>
-      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
-    </dl>
-  </article>
+
 <h2>A revisar</h2>
   <article class="chk atencion">
     <div class="chk-h"><span class="num">5</span><h3>Título y descripción de la vista previa</h3><span class="badge atencion">Atención</span></div>
@@ -124,7 +116,7 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
   <article class="chk ok">
     <div class="chk-h"><span class="num">8</span><h3>Tiempo de respuesta del servidor</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>El HTML de https://tiendafeedback.com.ar/brand/1049-on-stage/s-2/marca-on_stage/producto-destacado tardó 828 ms en llegar.</dd>
+      <dt>Qué medí</dt><dd>El HTML de https://tiendafeedback.com.ar/brand/1049-on-stage/s-2/marca-on_stage/producto-destacado tardó 610 ms en llegar.</dd>
       
     </dl>
   </article>
@@ -205,7 +197,14 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
       
     </dl>
   </article>
-
+<h2>No aplica o sin datos</h2>
+  <article class="chk na">
+    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge na">No aplica</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se pudo identificar con certeza una ficha de producto en el sitio, así que este punto no se evalúa. Sobre una categoría o un listado la respuesta no significaría nada.</dd>
+      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
+    </dl>
+  </article>
 
 <footer>
   <p><strong>Vito Di Cino</strong> — auditoría técnica de tiendas online.</p>

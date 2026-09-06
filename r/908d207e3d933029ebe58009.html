@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Auditoría — Papelera Central</title>
 <style>
@@ -37,16 +36,16 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
 <header>
   <p class="kicker">Auditoría Express · 22 puntos</p>
   <h1>Papelera Central</h1>
-  <p class="meta">https://papeleracentral.com.ar · plataforma detectada: desconocida · análisis del 5 de septiembre de 2026</p>
+  <p class="meta">https://papeleracentral.com.ar · plataforma detectada: desconocida · análisis del 6 de septiembre de 2026</p>
 </header>
 
 <div class="resumen">
   <div class="stat f"><b>2</b><span>fallas</span></div>
   <div class="stat a"><b>5</b><span>a revisar</span></div>
-  <div class="stat o"><b>15</b><span>en orden</span></div>
+  <div class="stat o"><b>14</b><span>en orden</span></div>
 </div>
 
-<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155</strong> como página de producto de referencia. No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
+<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571</strong> como página interna de referencia (no se pudo confirmar que sea una ficha de producto, así que no se afirma nada que dependa de eso). No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
 
 <h2>Fallas — arreglar primero</h2>
   <article class="chk falla">
@@ -57,10 +56,10 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
     </dl>
   </article>
   <article class="chk falla">
-    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge falla">Falla</span></div>
+    <div class="chk-h"><span class="num">4</span><h3>Vista previa al compartir por WhatsApp (og:image)</h3><span class="badge falla">Falla</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155 no publica datos estructurados de tipo Product.</dd>
-      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
+      <dt>Qué medí</dt><dd>og:image apunta a temp-img/no-photo.jpg y ese archivo no responde.</dd>
+      <dt>Por qué importa</dt><dd>En Argentina la recomendación boca a boca pasa por WhatsApp. Un link sin foto se comparte muchísimo menos.</dd><dt>Cómo se arregla</dt><dd>Declarar og:image con URL absoluta (https://) de al menos 600×315 px en cada página de producto. Verificalo mandándote el link a vos mismo.</dd>
     </dl>
   </article>
 <h2>A revisar</h2>
@@ -81,7 +80,7 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
   <article class="chk atencion">
     <div class="chk-h"><span class="num">9</span><h3>Carga diferida de imágenes</h3><span class="badge atencion">Atención</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>24 de 24 imágenes sin loading=&quot;lazy&quot; en https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155.</dd>
+      <dt>Qué medí</dt><dd>24 de 24 imágenes sin loading=&quot;lazy&quot; en https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571.</dd>
       <dt>Por qué importa</dt><dd>Sin carga diferida el celular descarga fotos que el visitante todavía no vio.</dd><dt>Cómo se arregla</dt><dd>Agregar loading=&quot;lazy&quot; a todas las &lt;img&gt; salvo la primera visible.</dd>
     </dl>
   </article>
@@ -101,13 +100,6 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
   </article>
 <h2>Lo que ya está en orden</h2>
   <article class="chk ok">
-    <div class="chk-h"><span class="num">4</span><h3>Vista previa al compartir por WhatsApp (og:image)</h3><span class="badge ok">En orden</span></div>
-    <dl>
-      <dt>Qué medí</dt><dd>og:image presente y accesible: https://papeleracentral.com.ar/webfiles/papeleracentral/productos/9341/1_1000x1000.webp</dd>
-      
-    </dl>
-  </article>
-  <article class="chk ok">
     <div class="chk-h"><span class="num">5</span><h3>Título y descripción de la vista previa</h3><span class="badge ok">En orden</span></div>
     <dl>
       <dt>Qué medí</dt><dd>og:title=presente · og:description=presente</dd>
@@ -117,35 +109,35 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
   <article class="chk ok">
     <div class="chk-h"><span class="num">6</span><h3>Peso real de las imágenes</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>10 imágenes de https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155 suman 0.07 MB. En 4G promedio son ~0.4 s sólo de imágenes.</dd>
+      <dt>Qué medí</dt><dd>5 imágenes de https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571 suman 0.02 MB. En 4G promedio son ~0.1 s sólo de imágenes.</dd>
       
     </dl>
   </article>
   <article class="chk ok">
     <div class="chk-h"><span class="num">7</span><h3>Imagen más pesada</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>0.02 MB — https://papeleracentral.com.ar/webfiles/papeleracentral/productos/9341/1_1000x1000.webp?1788652959</dd>
+      <dt>Qué medí</dt><dd>0.01 MB — https://papeleracentral.com.ar/temp-img/logo-mp.png</dd>
       
     </dl>
   </article>
   <article class="chk ok">
     <div class="chk-h"><span class="num">8</span><h3>Tiempo de respuesta del servidor</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>El HTML de https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155 tardó 246 ms en llegar.</dd>
+      <dt>Qué medí</dt><dd>El HTML de https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571 tardó 241 ms en llegar.</dd>
       
     </dl>
   </article>
   <article class="chk ok">
     <div class="chk-h"><span class="num">10</span><h3>Peso del HTML</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>210 KB de HTML en https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155.</dd>
+      <dt>Qué medí</dt><dd>208 KB de HTML en https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571.</dd>
       
     </dl>
   </article>
   <article class="chk ok">
     <div class="chk-h"><span class="num">11</span><h3>Título de la página</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>&quot;BAND.COTNYL CAT 2 C/TAPA CAT 22 x u.(x300)&quot; (42 caracteres)</dd>
+      <dt>Qué medí</dt><dd>&quot;CAJA NAVIDE?A APILABLE FELICIDAES(30x17x34)&quot; (43 caracteres)</dd>
       
     </dl>
   </article>
@@ -180,7 +172,7 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
   <article class="chk ok">
     <div class="chk-h"><span class="num">19</span><h3>HTTPS</h3><span class="badge ok">En orden</span></div>
     <dl>
-      <dt>Qué medí</dt><dd>https://papeleracentral.com.ar/productos/bandcotnyl-cat-2-ctapa-cat-22-x-ux300-155</dd>
+      <dt>Qué medí</dt><dd>https://papeleracentral.com.ar/productos/caja-navidea-apilable-felicidaes30x17x34-4571</dd>
       
     </dl>
   </article>
@@ -205,7 +197,14 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
       
     </dl>
   </article>
-
+<h2>No aplica o sin datos</h2>
+  <article class="chk na">
+    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge na">No aplica</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se pudo identificar con certeza una ficha de producto en el sitio, así que este punto no se evalúa. Sobre una categoría o un listado la respuesta no significaría nada.</dd>
+      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
+    </dl>
+  </article>
 
 <footer>
   <p><strong>Vito Di Cino</strong> — auditoría técnica de tiendas online.</p>

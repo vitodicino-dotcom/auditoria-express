@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8">
-<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Auditoría — Casa de Vinos Mendoza</title>
 <style>
@@ -37,16 +36,16 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
 <header>
   <p class="kicker">Auditoría Express · 22 puntos</p>
   <h1>Casa de Vinos Mendoza</h1>
-  <p class="meta">https://casadevinosmendoza.com.ar · plataforma detectada: WooCommerce · análisis del 5 de septiembre de 2026</p>
+  <p class="meta">https://casadevinosmendoza.com.ar · plataforma detectada: WooCommerce · análisis del 6 de septiembre de 2026</p>
 </header>
 
 <div class="resumen">
-  <div class="stat f"><b>3</b><span>fallas</span></div>
-  <div class="stat a"><b>2</b><span>a revisar</span></div>
-  <div class="stat o"><b>17</b><span>en orden</span></div>
+  <div class="stat f"><b>2</b><span>fallas</span></div>
+  <div class="stat a"><b>1</b><span>a revisar</span></div>
+  <div class="stat o"><b>18</b><span>en orden</span></div>
 </div>
 
-<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://casadevinosmendoza.com.ar/producto/tres-paisajes-en-una-copa-mix-pinot-noir-x3/</strong> como página de producto de referencia. No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
+<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda, tomando <strong>https://casadevinosmendoza.com.ar/producto/tres-paisajes-en-una-copa-mix-pinot-noir-x3/</strong> como página interna de referencia (no se pudo confirmar que sea una ficha de producto, así que no se afirma nada que dependa de eso). No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
 
 <h2>Fallas — arreglar primero</h2>
   <article class="chk falla">
@@ -54,13 +53,6 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
     <dl>
       <dt>Qué medí</dt><dd>Descargué el HTML de https://casadevinosmendoza.com.ar y no contiene la palabra &quot;arrepentimiento&quot; en ningún lugar de la portada.</dd>
       <dt>Por qué importa</dt><dd>La Disposición 954/2025 de la Subsecretaría de Defensa del Consumidor y Lealtad Comercial (derogó la Res. 424/2020) obliga a todo proveedor que comercialice a distancia a publicar ese enlace, visible desde el primer acceso al sitio y sin exigir registro previo. El incumplimiento se sanciona por la Ley 24.240.</dd><dt>Cómo se arregla</dt><dd>Creá una página titulada &quot;Botón de arrepentimiento&quot; con el procedimiento de revocación y el compromiso de entregar un código de identificación dentro de las 24 h. Enlazala desde el pie de todas las páginas con ese texto exacto. No puede requerir login.</dd>
-    </dl>
-  </article>
-  <article class="chk falla">
-    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge falla">Falla</span></div>
-    <dl>
-      <dt>Qué medí</dt><dd>https://casadevinosmendoza.com.ar/producto/tres-paisajes-en-una-copa-mix-pinot-noir-x3/ no publica datos estructurados de tipo Product.</dd>
-      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
     </dl>
   </article>
   <article class="chk falla">
@@ -76,13 +68,6 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
     <dl>
       <dt>Qué medí</dt><dd>No se detectó el QR de Data Fiscal (AFIP/ARCA) en la portada.</dd>
       <dt>Por qué importa</dt><dd>Acredita la inscripción fiscal del vendedor y suma confianza. Verificá con tu contador si en tu situación es exigible.</dd><dt>Cómo se arregla</dt><dd>Entrá a ARCA (ex AFIP) → &quot;Formulario 960/D - Data Fiscal&quot;, generá el QR y pegalo en el pie del sitio. Es gratis.</dd>
-    </dl>
-  </article>
-  <article class="chk atencion">
-    <div class="chk-h"><span class="num">8</span><h3>Tiempo de respuesta del servidor</h3><span class="badge atencion">Atención</span></div>
-    <dl>
-      <dt>Qué medí</dt><dd>El HTML de https://casadevinosmendoza.com.ar/producto/tres-paisajes-en-una-copa-mix-pinot-noir-x3/ tardó 1294 ms en llegar.</dd>
-      <dt>Por qué importa</dt><dd>Es tiempo muerto: el navegador no puede dibujar nada hasta que llega.</dd><dt>Cómo se arregla</dt><dd>Revisar plan de hosting, caché y plugins. Por encima de 2,5 s conviene mirarlo en serio.</dd>
     </dl>
   </article>
 <h2>Lo que ya está en orden</h2>
@@ -118,6 +103,13 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
     <div class="chk-h"><span class="num">7</span><h3>Imagen más pesada</h3><span class="badge ok">En orden</span></div>
     <dl>
       <dt>Qué medí</dt><dd>0.05 MB — https://casadevinosmendoza.com.ar/wp-content/uploads/2026/07/Tres-Paisajes-en-una-Copa-Mix-Pinot-Noir-x3-700x700.jpg</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">8</span><h3>Tiempo de respuesta del servidor</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>El HTML de https://casadevinosmendoza.com.ar/producto/tres-paisajes-en-una-copa-mix-pinot-noir-x3/ tardó 310 ms en llegar.</dd>
       
     </dl>
   </article>
@@ -205,7 +197,14 @@ footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color
       
     </dl>
   </article>
-
+<h2>No aplica o sin datos</h2>
+  <article class="chk na">
+    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge na">No aplica</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se pudo identificar con certeza una ficha de producto en el sitio, así que este punto no se evalúa. Sobre una categoría o un listado la respuesta no significaría nada.</dd>
+      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
+    </dl>
+  </article>
 
 <footer>
   <p><strong>Vito Di Cino</strong> — auditoría técnica de tiendas online.</p>
