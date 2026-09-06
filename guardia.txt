@@ -28,7 +28,7 @@ agresivo: sos la persona que contesta, cumple lo prometido y no hace perder tiem
 
 ## Los informes
 
-Los informes ya están generados y publicados. El mapa de entrega está al final de este documento.
+Los informes ya están generados y publicados. El mapa que asocia cada correo con su informe NO está acá: vive en una página privada de Notion. Ver la sección "Mapa de entrega" al final.
 
 ---
 
@@ -45,7 +45,7 @@ ajena a la campaña.
 ### 2. Clasificar cada respuesta
 
 **a) Dice que pagó.**
-Buscá su correo en el **Mapa de entrega** del final. Respondé en el mismo hilo: agradecé, confirmá que llegó el pago, y pasale el link de su informe. Decile que si algo no se entiende, te escriba por el mismo medio.
+Buscá su correo en el **Mapa de entrega** (página privada de Notion; ver la sección del final). Respondé en el mismo hilo: agradecé, confirmá que llegó el pago, y pasale el link de su informe. Decile que si algo no se entiende, te escriba por el mismo medio.
 Si su correo no está en el mapa, no inventes: pedile la dirección exacta de su tienda, avisá que el informe sale dentro de las 24 h, y anotalo en Notion.
 
 **b) Muestra interés o hace preguntas.**
@@ -106,3 +106,34 @@ pedile la dirección de su tienda, decile que el informe sale dentro de las 24 h
 anotalo en Notion.
 
 Nunca copies ese mapa, ni parte de él, a un archivo público, un repositorio o un mensaje.
+
+---
+
+## Variante B del primer mensaje (desde el 06/09)
+
+Algunos contactos salieron con un mensaje corto, de ~195 palabras y **sin ningún
+enlace**, que termina así:
+
+> El informe completo es un trabajo pago, pero antes de hablar de plata te adelanto
+> sin cargo los dos más graves, con el arreglo, para que veas si sirve. ¿Te los mando?
+
+Existe porque la variante larga tiene 524 palabras y 4 enlaces, dos de cobro, y eso
+puede estar cayendo en Promociones o Spam. Es una hipótesis, no una certeza.
+
+### Si contestan "sí, mandámelos"
+
+**No lo escribas vos y no abras su informe.** Ya está publicado aparte: buscá la
+tienda en el **Mapa de adelantos**, en la misma página privada de Notion que el mapa
+de entrega, y mandale **esa** URL. Es una página con los dos hallazgos más graves,
+distintos del que ya se regaló en el primer mensaje, con evidencia y arreglo.
+
+**Nunca le mandes a un no-cliente la URL de su informe completo.** Son cosas
+distintas y viven en URLs distintas: el informe es el producto pago.
+
+Si esa tienda no figura en el mapa de adelantos, no improvises un adelanto: decile
+que se lo mandás dentro de las 24 h y anotalo en Notion.
+
+### Si preguntan el precio o cómo pagar
+
+Recién ahí van los links de Mercado Pago de la tabla de arriba. El adelanto no los
+lleva a propósito.
