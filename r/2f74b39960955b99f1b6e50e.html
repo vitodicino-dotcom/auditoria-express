@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es-AR"><head><meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auditoría — Distribuidora Pilita</title>
+<style>
+:root{--bg:#faf9f7;--fg:#16150f;--muted:#5c584c;--line:#e2ded4;--card:#fff;
+ --falla:#a3301a;--aten:#8a6410;--ok:#1c5d3a;--accent:#1c5d3a}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12120f;--fg:#f0eee7;--muted:#a09a8c;--line:#2c2a24;--card:#1a1a16;--falla:#e08063;--aten:#d9ac54;--ok:#4ea87a;--accent:#4ea87a}}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem 4rem}
+header{padding:3rem 0 1.5rem;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(1.5rem,4.5vw,2.2rem);margin:.3rem 0 .5rem;letter-spacing:-.02em}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;letter-spacing:-.01em}
+.kicker{font-size:.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0}
+.meta{color:var(--muted);font-size:.9rem;margin:.4rem 0 0}
+.resumen{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:1.5rem 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem;text-align:center}
+.stat b{display:block;font-size:1.7rem;line-height:1.1;letter-spacing:-.02em}
+.stat span{font-size:.78rem;color:var(--muted)}
+.stat.f b{color:var(--falla)} .stat.a b{color:var(--aten)} .stat.o b{color:var(--ok)}
+.chk{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--line);border-radius:10px;padding:1rem 1.1rem;margin:.7rem 0}
+.chk.falla{border-left-color:var(--falla)} .chk.atencion{border-left-color:var(--aten)} .chk.ok{border-left-color:var(--ok)}
+.chk-h{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.chk-h h3{font-size:1.02rem;margin:0;flex:1 1 12rem}
+.num{color:var(--muted);font-size:.8rem;font-variant-numeric:tabular-nums;min-width:1.3rem}
+.badge{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;padding:.15rem .45rem;border-radius:999px;border:1px solid currentColor}
+.badge.falla{color:var(--falla)} .badge.atencion{color:var(--aten)} .badge.ok{color:var(--ok)} .badge.na{color:var(--muted)}
+dl{margin:.7rem 0 0;font-size:.93rem}
+dt{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:.6rem}
+dd{margin:.15rem 0 0;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--line);margin-top:3rem;padding-top:1.5rem;color:var(--muted);font-size:.87rem}
+@media print{body{background:#fff}.chk{break-inside:avoid}}
+</style></head><body><div class="wrap">
+
+<header>
+  <p class="kicker">Auditoría Express · 22 puntos</p>
+  <h1>Distribuidora Pilita</h1>
+  <p class="meta">https://www.distribuidorapilita.com.ar · plataforma detectada: desconocida · análisis del 5 de septiembre de 2026</p>
+</header>
+
+<div class="resumen">
+  <div class="stat f"><b>2</b><span>fallas</span></div>
+  <div class="stat a"><b>8</b><span>a revisar</span></div>
+  <div class="stat o"><b>11</b><span>en orden</span></div>
+</div>
+
+<p>Todo lo que sigue se midió sobre las páginas públicas de la tienda. No se usó ningún acceso privado. Cada punto trae la evidencia exacta para que la puedas verificar por tu cuenta.</p>
+
+<h2>Fallas — arreglar primero</h2>
+  <article class="chk falla">
+    <div class="chk-h"><span class="num">1</span><h3>Botón de Arrepentimiento</h3><span class="badge falla">Falla</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>Descargué el HTML de https://www.distribuidorapilita.com.ar y no contiene la palabra &quot;arrepentimiento&quot; en ningún lugar de la portada.</dd>
+      <dt>Por qué importa</dt><dd>La Disposición 954/2025 de la Subsecretaría de Defensa del Consumidor y Lealtad Comercial (derogó la Res. 424/2020) obliga a todo proveedor que comercialice a distancia a publicar ese enlace, visible desde el primer acceso al sitio y sin exigir registro previo. El incumplimiento se sanciona por la Ley 24.240.</dd><dt>Cómo se arregla</dt><dd>Creá una página titulada &quot;Botón de arrepentimiento&quot; con el procedimiento de revocación y el compromiso de entregar un código de identificación dentro de las 24 h. Enlazala desde el pie de todas las páginas con ese texto exacto. No puede requerir login.</dd>
+    </dl>
+  </article>
+  <article class="chk falla">
+    <div class="chk-h"><span class="num">6</span><h3>Peso real de las imágenes</h3><span class="badge falla">Falla</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>12 imágenes de https://www.distribuidorapilita.com.ar/ suman 2.05 MB. En 4G promedio son ~10.9 s sólo de imágenes.</dd>
+      <dt>Por qué importa</dt><dd>Más de 3 segundos y aproximadamente la mitad de los visitantes se van antes de ver el precio. El 80 % del tráfico argentino es móvil.</dd><dt>Cómo se arregla</dt><dd>Comprimir a WebP calidad 75 (squoosh.app, gratis). Suele bajar entre 60 % y 80 % sin diferencia visible.</dd>
+    </dl>
+  </article>
+<h2>A revisar</h2>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">2</span><h3>Data Fiscal (Formulario 960/D)</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se detectó el QR de Data Fiscal (AFIP/ARCA) en la portada.</dd>
+      <dt>Por qué importa</dt><dd>Acredita la inscripción fiscal del vendedor y suma confianza. Verificá con tu contador si en tu situación es exigible.</dd><dt>Cómo se arregla</dt><dd>Entrá a ARCA (ex AFIP) → &quot;Formulario 960/D - Data Fiscal&quot;, generá el QR y pegalo en el pie del sitio. Es gratis.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">3</span><h3>Política de cambios y devoluciones</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se detectó texto de cambios ni devoluciones en la portada.</dd>
+      <dt>Por qué importa</dt><dd>Informarla es obligación legal y además reduce el miedo a comprar por primera vez.</dd><dt>Cómo se arregla</dt><dd>Publicá una página con plazo, estado en que se acepta el producto, quién paga el envío de vuelta y cómo se solicita. Enlazala desde el pie.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">7</span><h3>Imagen más pesada</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>0.47 MB — https://www.distribuidorapilita.com.ar/image/cache//slider/banner2006---1240x380.jpg</dd>
+      <dt>Por qué importa</dt><dd>Una sola imagen mal exportada puede pesar más que una página entera bien hecha.</dd><dt>Cómo se arregla</dt><dd>Reexportar esa imagen en WebP calidad 75 y reemplazarla.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">9</span><h3>Carga diferida de imágenes</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>55 de 55 imágenes sin loading=&quot;lazy&quot; en https://www.distribuidorapilita.com.ar/.</dd>
+      <dt>Por qué importa</dt><dd>Sin carga diferida el celular descarga fotos que el visitante todavía no vio.</dd><dt>Cómo se arregla</dt><dd>Agregar loading=&quot;lazy&quot; a todas las &lt;img&gt; salvo la primera visible.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">11</span><h3>Título de la página</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>&quot;Juguetes Por Mayor Libreria Mayorista Online Libros Infantiles Distribuidora Pilita&quot; (83 caracteres)</dd>
+      <dt>Por qué importa</dt><dd>Es lo que se ve en Google y en la pestaña. Google corta cerca de los 60 caracteres.</dd><dt>Cómo se arregla</dt><dd>Escribir un título de 50-60 caracteres con la palabra por la que querés que te encuentren.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">14</span><h3>Encabezado principal</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>0 etiquetas &lt;h1&gt;.</dd>
+      <dt>Por qué importa</dt><dd>Es la señal más fuerte de qué trata la página. Ni cero ni cinco.</dd><dt>Cómo se arregla</dt><dd>Dejar exactamente un &lt;h1&gt; por página, con el nombre del producto o la categoría.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">15</span><h3>Etiqueta canónica</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>Sin &lt;link rel=&quot;canonical&quot;&gt;.</dd>
+      <dt>Por qué importa</dt><dd>Con filtros y variantes de URL, Google puede indexar la versión equivocada.</dd><dt>Cómo se arregla</dt><dd>Declarar la URL canónica en cada página.</dd>
+    </dl>
+  </article>
+  <article class="chk atencion">
+    <div class="chk-h"><span class="num">22</span><h3>Cuotas e información de envío visibles</h3><span class="badge atencion">Atención</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>Cuotas mencionadas: no · Información de envíos: sí.</dd>
+      <dt>Por qué importa</dt><dd>La cuota y el plazo de entrega son las dos primeras preguntas de un comprador argentino. Si no están arriba, se van a buscarlas a otro lado.</dd><dt>Cómo se arregla</dt><dd>Poner una franja fija arriba de todo con cuotas disponibles, plazo de entrega y monto desde el que el envío es gratis.</dd>
+    </dl>
+  </article>
+<h2>Lo que ya está en orden</h2>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">4</span><h3>Vista previa al compartir por WhatsApp (og:image)</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>og:image presente y accesible: image/cache//logo-pilita-2-600x315.png</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">5</span><h3>Título y descripción de la vista previa</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>og:title=presente · og:description=presente</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">8</span><h3>Tiempo de respuesta del servidor</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>El HTML de https://www.distribuidorapilita.com.ar/ tardó 775 ms en llegar.</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">10</span><h3>Peso del HTML</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>125 KB de HTML en https://www.distribuidorapilita.com.ar/.</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">12</span><h3>Descripción para buscadores</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>175 caracteres.</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">16</span><h3>Idioma declarado</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>lang=&quot;es&quot;</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">17</span><h3>Texto alternativo en imágenes</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>5 de 55 imágenes sin alt.</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">18</span><h3>Sitio declarado como móvil</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>viewport: width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">19</span><h3>HTTPS</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>https://www.distribuidorapilita.com.ar/</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">20</span><h3>Ícono de pestaña</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>Presente.</dd>
+      
+    </dl>
+  </article>
+  <article class="chk ok">
+    <div class="chk-h"><span class="num">21</span><h3>Botón de WhatsApp</h3><span class="badge ok">En orden</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>Presente: https://wa.me/.</dd>
+      
+    </dl>
+  </article>
+<h2>No aplica o sin datos</h2>
+  <article class="chk na">
+    <div class="chk-h"><span class="num">13</span><h3>Datos estructurados de producto</h3><span class="badge na">No aplica</span></div>
+    <dl>
+      <dt>Qué medí</dt><dd>No se encontró una página de producto para analizar.</dd>
+      <dt>Por qué importa</dt><dd>Sin esto el resultado en Google no muestra precio ni disponibilidad, y ese es el resultado que se clickea.</dd><dt>Cómo se arregla</dt><dd>Agregar un bloque JSON-LD con @type Product, name, image y offers (price, priceCurrency, availability).</dd>
+    </dl>
+  </article>
+
+<footer>
+  <p><strong>Vito Di Cino</strong> — auditoría técnica de tiendas online.</p>
+  <p>El análisis técnico lo corre una herramienta propia sobre las páginas públicas del sitio; los resultados se revisan a mano antes de entregar. Las referencias normativas se citan para que las verifiques con tu asesor: este informe no es asesoramiento legal ni contable.</p>
+</footer>
+</div></body></html>

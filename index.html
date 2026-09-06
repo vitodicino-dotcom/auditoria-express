@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Auditoría Express para tiendas online argentinas</title>
+<meta name="description" content="22 puntos revisados en tu tienda, con la evidencia medida y el arreglo exacto de cada uno. En 24 horas. Sin reunión.">
+<style>
+  :root{
+    --bg:#faf9f7; --fg:#16150f; --muted:#5c584c; --line:#e2ded4;
+    --card:#ffffff; --accent:#1c5d3a; --accent-fg:#ffffff; --warn:#8a3d12;
+    --max:44rem;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#12120f; --fg:#f0eee7; --muted:#a09a8c; --line:#2c2a24;
+      --card:#1a1a16; --accent:#4ea87a; --accent-fg:#06170e; --warn:#e0a274;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12120f; --fg:#f0eee7; --muted:#a09a8c; --line:#2c2a24;
+    --card:#1a1a16; --accent:#4ea87a; --accent-fg:#06170e; --warn:#e0a274;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--fg); margin:0;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 1.25rem}
+  header{padding:3.5rem 0 2.5rem; border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(1.7rem,5.5vw,2.6rem); line-height:1.15; margin:0 0 1rem; letter-spacing:-.02em}
+  h2{font-size:1.3rem; margin:2.75rem 0 .9rem; letter-spacing:-.01em}
+  h3{font-size:1.02rem; margin:1.5rem 0 .4rem}
+  p{margin:0 0 1rem}
+  .lead{font-size:1.12rem; color:var(--muted)}
+  .kicker{
+    font-size:.76rem; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; margin:0 0 .9rem
+  }
+  section{padding:.5rem 0}
+  ul{padding-left:1.15rem; margin:0 0 1rem}
+  li{margin:.35rem 0}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:1.4rem 1.3rem; margin:1rem 0;
+  }
+  .price-grid{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:40rem){ .price-grid{grid-template-columns:1fr 1fr} }
+  .price{font-size:1.85rem; font-weight:700; letter-spacing:-.02em; margin:.2rem 0 .1rem}
+  .price small{font-size:.8rem; font-weight:400; color:var(--muted); letter-spacing:0}
+  .tag{
+    display:inline-block; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+    font-weight:700; padding:.2rem .5rem; border-radius:999px;
+    background:var(--accent); color:var(--accent-fg); margin-bottom:.5rem
+  }
+  .btn{
+    display:block; text-align:center; text-decoration:none; font-weight:650;
+    background:var(--accent); color:var(--accent-fg);
+    padding:.85rem 1.2rem; border-radius:10px; margin-top:1rem;
+  }
+  .btn.ghost{background:transparent; color:var(--fg); border:1px solid var(--line)}
+  .points{display:grid; gap:.15rem .9rem; grid-template-columns:1fr; margin:0 0 1rem; padding:0; list-style:none}
+  @media(min-width:34rem){ .points{grid-template-columns:1fr 1fr} }
+  .points li{display:flex; gap:.5rem; font-size:.95rem; align-items:baseline}
+  .points li::before{content:"—"; color:var(--accent); flex:none}
+  .note{font-size:.88rem; color:var(--muted)}
+  .rule{border:0; border-top:1px solid var(--line); margin:2.5rem 0}
+  details{border-top:1px solid var(--line); padding:.85rem 0}
+  summary{cursor:pointer; font-weight:600; list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+ "; color:var(--accent); font-weight:700}
+  details[open] summary::before{content:"– "}
+  details p{margin:.6rem 0 0; color:var(--muted); font-size:.95rem}
+  footer{border-top:1px solid var(--line); margin-top:3rem; padding:2rem 0 3.5rem; color:var(--muted); font-size:.88rem}
+  code{background:var(--card); border:1px solid var(--line); padding:.1rem .35rem; border-radius:5px; font-size:.88em}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <p class="kicker">Para tiendas online argentinas</p>
+  <h1>22 puntos revisados en tu tienda, con la evidencia medida y el arreglo exacto de cada uno.</h1>
+  <p class="lead">En 24 horas. Sin reunión, sin llamada, sin darme acceso a ningún panel. Si no te muestro al menos 5 cosas concretas que no sabías, te devuelvo el dinero.</p>
+</header>
+
+<section>
+  <h2>Por qué esto existe</h2>
+  <p>De las 79 tiendas argentinas que auditué para armar esto, las que tienen sitio propio promediaron 9 problemas reales que el dueño no ve, no porque no sepa, sino porque nadie se los midió: fotos que pesan 3&nbsp;MB y tardan ocho segundos en un celular, links que se comparten por WhatsApp sin la foto del producto, fichas sin talles ni materiales, y —muy seguido— el Botón de Arrepentimiento que la normativa argentina exige y que directamente no está.</p>
+  <p>Nada de eso se arregla con una reunión. Se arregla sabiendo exactamente qué está mal y cómo tocarlo.</p>
+</section>
+
+<section>
+  <h2>Qué te llega</h2>
+  <p>Un informe con los 22 puntos, uno por uno. De cada uno vas a tener tres cosas: <strong>qué medí</strong> (con el número o la URL exacta), <strong>por qué te cuesta plata</strong>, y <strong>cómo se arregla</strong>, en pasos, con el código o la configuración concreta cuando corresponde.</p>
+  <ul class="points">
+    <li>Vista previa al compartir por WhatsApp</li>
+    <li>Peso real de las fotos, medido</li>
+    <li>Tiempo de respuesta del servidor</li>
+    <li>Botón de Arrepentimiento (Disp. 954/2025)</li>
+    <li>Data Fiscal ARCA / AFIP</li>
+    <li>Política de cambios y devoluciones</li>
+    <li>Información de envíos visible</li>
+    <li>Datos estructurados de producto</li>
+    <li>Precio y stock legibles por Google</li>
+    <li>Calidad de las fichas de producto</li>
+    <li>Texto alternativo en imágenes</li>
+    <li>Carga diferida de fotos</li>
+    <li>Título y descripción para buscadores</li>
+    <li>Encabezados de página</li>
+    <li>Etiqueta canónica</li>
+    <li>Declaración de sitio móvil</li>
+    <li>HTTPS y certificado</li>
+    <li>Ícono de pestaña</li>
+    <li>Idioma declarado</li>
+    <li>Botón de WhatsApp</li>
+    <li>Cuotas anunciadas</li>
+    <li>Vías de contacto visibles</li>
+  </ul>
+  <p class="note">Todo se mide sobre las páginas públicas de tu tienda. No necesito usuarios, ni claves, ni entrar a tu panel.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Precio</h2>
+  <div class="price-grid">
+    <div class="card">
+      <span class="tag">Informe</span>
+      <h3 style="margin-top:0">Auditoría Express</h3>
+      <p class="price">ARS 44.900 <small>pago único</small></p>
+      <p class="note">Los 22 puntos con evidencia y arreglo paso a paso. En tus manos dentro de las 24&nbsp;h. Los arreglos los aplicás vos o tu diseñador.</p>
+      <a class="btn" href="https://mpago.la/1dSkdBa">Pagar y pedir la auditoría — ARS 44.900</a>
+    </div>
+    <div class="card">
+      <span class="tag">Informe + manos</span>
+      <h3 style="margin-top:0">Auditoría + Implementación</h3>
+      <p class="price">ARS 199.000 <small>pago único</small></p>
+      <p class="note">El mismo informe, pero los arreglos técnicos los hago yo y te los entrego aplicados y verificados. Para todo lo que se pueda tocar sin rehacer tu tienda.</p>
+      <a class="btn ghost" href="https://mpago.la/2nmadgL">Pagar y pedir la implementación — ARS 199.000</a>
+    </div>
+  </div>
+  <p class="note">Precios en pesos, pago por adelantado, con Mercado Pago. Después de pagar escribime a <a href="mailto:vitodicino@gmail.com?subject=Ya%20pagu%C3%A9%20-%20mi%20tienda%20es" style="color:var(--accent)">vitodicino@gmail.com</a> con la dirección de tu tienda: ahí arranca el reloj de las 24&nbsp;h.</p>
+</section>
+
+<section>
+  <div class="card">
+    <h3 style="margin-top:0">La garantía, en una línea</h3>
+    <p style="margin:0">Si el informe no te muestra al menos <strong>5 cosas concretas que no sabías</strong>, me lo decís y te devuelvo el dinero. No hay letra chica ni tengo que estar de acuerdo con vos.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Cómo funciona</h2>
+  <p><strong>1.</strong> Pagás con el botón de arriba y me escribís con la dirección de tu tienda. Nada más.<br>
+     <strong>2.</strong> Corro el análisis y reviso a mano lo que la herramienta marca.<br>
+     <strong>3.</strong> Dentro de 24&nbsp;h te llega el informe completo. Si algo no se entiende, me escribís y te lo explico por el mismo medio.</p>
+  <p class="note">No hay videollamada en ningún paso. No es un truco de venta: es el formato. Si querés que te lo explique hablando, no soy la persona indicada.</p>
+</section>
+
+<hr class="rule">
+
+<section>
+  <h2>Preguntas que me hacen</h2>
+
+  <details>
+    <summary>¿Esto lo hace una inteligencia artificial?</summary>
+    <p>El análisis técnico lo corre una herramienta que escribí yo: descarga las páginas públicas de tu tienda, mide el peso de las imágenes una por una, revisa las etiquetas del código y busca lo que exige la normativa. Después reviso los resultados a mano, porque una herramienta sola se equivoca. Te lo aclaro porque me parece que corresponde saberlo, no porque cambie el resultado.</p>
+  </details>
+
+  <details>
+    <summary>Mi tienda es de Tiendanube, ¿igual sirve?</summary>
+    <p>Sirve, pero te lo digo derecho: Tiendanube resuelve solo varias de estas cosas en sus diseños actuales, así que en esas tiendas suelo encontrar menos problemas —entre tres y cinco en vez de diez. Si tu tienda es de Tiendanube y con un diseño reciente, escribime antes de pagar y te digo con franqueza si te conviene.</p>
+  </details>
+
+  <details>
+    <summary>¿Por qué el Botón de Arrepentimiento aparece tanto?</summary>
+    <p>Porque la Disposición 954/2025 de la Subsecretaría de Defensa del Consumidor —que derogó la vieja Resolución 424/2020— obliga a todo el que venda a distancia a publicar ese enlace visible desde el primer acceso al sitio y sin pedir registro previo, y muchas tiendas hechas a medida nunca lo agregaron. El incumplimiento cae bajo la Ley 24.240. No soy abogado y esto no es asesoramiento legal: te muestro que en tu sitio no está y te digo qué dice la norma para que lo revises con quien corresponda.</p>
+  </details>
+
+  <details>
+    <summary>¿Y si ya sé todo lo que me vas a decir?</summary>
+    <p>Entonces pedís la devolución y listo. La garantía existe justamente para eso: el riesgo de que esto no te sirva es mío, no tuyo.</p>
+  </details>
+
+  <details>
+    <summary>¿Vas a tocar mi tienda sin avisarme?</summary>
+    <p>No. En la Auditoría Express no toco nada: te entrego el informe. En la opción con implementación acordamos antes exactamente qué se cambia, y no toco nada fuera de esa lista.</p>
+  </details>
+
+  <details>
+    <summary>¿Cómo sé que no es un curro?</summary>
+    <p>Porque antes de pedirte un peso ya te mandé un hallazgo real de tu tienda, con la evidencia, y el arreglo completo para que lo apliques por tu cuenta si querés. Si eso no alcanza para generar confianza, no compres: aplicá ese arreglo y quedamos a mano.</p>
+  </details>
+</section>
+
+<footer>
+  <p><strong>Vito Di Cino</strong> — Argentina.<br>
+  Auditorías técnicas de tiendas online. Trabajo por escrito, entrego en 24&nbsp;h.<br>
+  <a href="mailto:vitodicino@gmail.com" style="color:var(--accent)">vitodicino@gmail.com</a></p>
+  <p>Esta página no es asesoramiento legal ni contable. Las referencias normativas se citan para que las verifiques con tu asesor.</p>
+</footer>
+
+</div>
+</body>
+</html>
