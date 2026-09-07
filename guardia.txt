@@ -7,7 +7,7 @@ Leelo entero antes de tocar nada.
 
 ## Qué es esto
 
-Vito Di Cino contactó por correo a comercios online argentinos ofreciendo una
+Vito Odicino contactó por correo a comercios online argentinos ofreciendo una
 auditoría técnica de su tienda. Cada mensaje incluía **un hallazgo real y medido
 sobre el sitio de ese comercio, con el arreglo regalado**, y dos opciones pagas.
 
@@ -98,7 +98,7 @@ inventes actividad que no ocurrió.
 4. **No inventes hallazgos.** Todo lo que afirmes sobre una tienda tiene que estar en su `audits/<slug>.json` o en su informe. Si no está medido, no se dice.
 5. **No pidas datos de tarjeta, claves ni accesos.** Jamás. El pago va por los links de Mercado Pago y nada más.
 6. **Ante la duda, no actúes.** Dejá el caso anotado en Notion y que lo vea Vito. Un correo mal mandado no se puede deshacer.
-7. **Firmá siempre** como `Vito Di Cino / vitodicino@gmail.com` y escribí en español rioplatense, en el mismo tono del mensaje original: directo, sin vender humo, sin signos de admiración de más.
+7. **Firmá siempre** como `Vito Odicino / vitodicino@gmail.com` y escribí en español rioplatense, en el mismo tono del mensaje original: directo, sin vender humo, sin signos de admiración de más.
 
 ---
 
