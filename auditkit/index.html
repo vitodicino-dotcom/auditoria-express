@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>AuditKit — auditorías de e-commerce con tu marca</title>
+<meta name="description" content="Mandás las URLs de tus clientes o prospectos y recibís un informe técnico por sitio, con tu nombre en el pie. 22 puntos medidos, con evidencia y el arreglo de cada uno.">
+<style>
+  :root{
+    --bg:#faf9f7; --fg:#16150f; --muted:#5c584c; --line:#e2ded4;
+    --card:#ffffff; --accent:#1c5d3a; --accent-fg:#ffffff; --warn:#8a3d12;
+    --max:44rem;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#12120f; --fg:#f0eee7; --muted:#a09a8c; --line:#2c2a24;
+      --card:#1a1a16; --accent:#4ea87a; --accent-fg:#06170e; --warn:#e0a274;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12120f; --fg:#f0eee7; --muted:#a09a8c; --line:#2c2a24;
+    --card:#1a1a16; --accent:#4ea87a; --accent-fg:#06170e; --warn:#e0a274;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--fg); margin:0;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 1.25rem}
+  header{padding:3.5rem 0 2.5rem; border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(1.7rem,5.5vw,2.6rem); line-height:1.15; margin:0 0 1rem; letter-spacing:-.02em}
+  h2{font-size:1.3rem; margin:2.75rem 0 .9rem; letter-spacing:-.01em}
+  h3{font-size:1.02rem; margin:1.5rem 0 .4rem}
+  p{margin:0 0 1rem}
+  .lead{font-size:1.12rem; color:var(--muted)}
+  .kicker{
+    font-size:.76rem; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--accent); font-weight:700; margin:0 0 .9rem
+  }
+  section{padding:.5rem 0}
+  ul{padding-left:1.15rem; margin:0 0 1rem}
+  li{margin:.35rem 0}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:1.4rem 1.3rem; margin:1rem 0;
+  }
+  .price-grid{display:grid; gap:1rem; grid-template-columns:1fr}
+  @media(min-width:40rem){ .price-grid{grid-template-columns:1fr 1fr} }
+  .price{font-size:1.85rem; font-weight:700; letter-spacing:-.02em; margin:.2rem 0 .1rem}
+  .price small{font-size:.8rem; font-weight:400; color:var(--muted); letter-spacing:0}
+  .tag{
+    display:inline-block; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+    font-weight:700; padding:.2rem .5rem; border-radius:999px;
+    background:var(--accent); color:var(--accent-fg); margin-bottom:.5rem
+  }
+  .btn{
+    display:block; text-align:center; text-decoration:none; font-weight:650;
+    background:var(--accent); color:var(--accent-fg);
+    padding:.85rem 1.2rem; border-radius:10px; margin-top:1rem;
+  }
+  .btn.ghost{background:transparent; color:var(--fg); border:1px solid var(--line)}
+  .points{display:grid; gap:.15rem .9rem; grid-template-columns:1fr; margin:0 0 1rem; padding:0; list-style:none}
+  @media(min-width:34rem){ .points{grid-template-columns:1fr 1fr} }
+  .points li{display:flex; gap:.5rem; font-size:.95rem; align-items:baseline}
+  .points li::before{content:"—"; color:var(--accent); flex:none}
+  .note{font-size:.88rem; color:var(--muted)}
+  .rule{border:0; border-top:1px solid var(--line); margin:2.5rem 0}
+  details{border-top:1px solid var(--line); padding:.85rem 0}
+  summary{cursor:pointer; font-weight:600; list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+ "; color:var(--accent); font-weight:700}
+  details[open] summary::before{content:"– "}
+  details p{margin:.6rem 0 0; color:var(--muted); font-size:.95rem}
+  footer{border-top:1px solid var(--line); margin-top:3rem; padding:2rem 0 3.5rem; color:var(--muted); font-size:.88rem}
+  code{background:var(--card); border:1px solid var(--line); padding:.1rem .35rem; border-radius:5px; font-size:.88em}
+  .nope{color:var(--warn)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header>
+  <p class="kicker">Para agencias y estudios web argentinos</p>
+  <h1>Auditorías técnicas de e-commerce, con tu nombre en el pie y sin las horas.</h1>
+  <p class="lead">Mandás una lista de URLs —clientes tuyos o tiendas que querés como clientes— y recibís un informe por sitio: 22 puntos medidos, con la evidencia exacta y el arreglo de cada uno. Vos los entregás como tuyos.</p>
+  <a class="btn" href="#precios">Ver precios</a>
+</header>
+
+<section>
+  <h2>Para qué sirve</h2>
+  <p>Auditar una tienda a mano lleva entre dos y cuatro horas: abrir el sitio, medir las fotos, mirar el HTML, revisar qué falta, redactarlo de forma presentable. Es trabajo que casi nunca se cobra, porque suele ser lo que hacés <em>antes</em> de que te contraten.</p>
+  <p>Esto lo automatiza. La misma herramienta que audita una tienda audita cincuenta, y devuelve un HTML autocontenido que se abre en el navegador o se imprime a PDF. Dos usos concretos:</p>
+  <ul>
+    <li><strong>Prospección.</strong> Un informe real sobre la tienda de un prospecto, mandado sin que lo pida, abre conversaciones que un PDF genérico de servicios no abre.</li>
+    <li><strong>Retención.</strong> Un informe trimestral por cliente, con números que cambian, es material tangible para justificar un fee.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Qué mide, exactamente</h2>
+  <p>22 puntos sobre páginas públicas. Cada uno devuelve tres cosas: <strong>qué se midió</strong> (con el número o la URL), <strong>por qué importa</strong> y <strong>cómo se arregla</strong>.</p>
+  <ul class="points">
+    <li>Botón de Arrepentimiento (Disp. 954/2025)</li>
+    <li>Data Fiscal (F. 960/D)</li>
+    <li>Política de cambios y devoluciones</li>
+    <li>Vista previa al compartir (og:image)</li>
+    <li>Título y descripción de esa vista previa</li>
+    <li>Peso real de las imágenes, en MB</li>
+    <li>Imagen más pesada del sitio</li>
+    <li>Tiempo de respuesta del servidor</li>
+    <li>Carga diferida de imágenes</li>
+    <li>Peso del HTML</li>
+    <li>Título de la página</li>
+    <li>Meta description</li>
+    <li>Datos estructurados de producto</li>
+    <li>Encabezado principal (h1)</li>
+    <li>Etiqueta canónica</li>
+    <li>Idioma declarado</li>
+    <li>Texto alternativo en imágenes</li>
+    <li>Declaración móvil (viewport)</li>
+    <li>HTTPS y redirección</li>
+    <li>Ícono de pestaña</li>
+    <li>Botón de WhatsApp</li>
+    <li>Cuotas y envío visibles</li>
+  </ul>
+
+  <h3>Y qué <span class="nope">no</span> hace</h3>
+  <p class="note">Lo aclaro antes de que lo compres, no después. <strong>No</strong> mide Core Web Vitals de usuarios reales (eso sale de CrUX, no de una descarga). <strong>No</strong> le pregunta a ChatGPT ni a Gemini qué opinan de la tienda: nadie puede medir eso de forma reproducible, y quien diga que sí te está vendiendo humo. <strong>No</strong> entra a ningún panel ni pide credenciales. <strong>No</strong> es asesoramiento legal: las referencias normativas están citadas para que las verifiques con tu asesor.</p>
+</section>
+
+<section>
+  <h2>Mirá el informe antes de pagar</h2>
+  <p>Es una auditoría real de una tienda argentina, con las mediciones intactas y la identidad del comercio reemplazada — porque ese comercio no pidió que su auditoría circule como material de venta de nadie.</p>
+  <a class="btn ghost" href="./muestra.html">Abrir informe de muestra</a>
+</section>
+
+<hr class="rule">
+
+<section id="precios">
+  <h2>Precios</h2>
+  <div class="price-grid">
+
+    <div class="card">
+      <span class="tag">Lote</span>
+      <h3 style="margin-top:0">Auditorías con tu marca</h3>
+      <p class="price">ARS 44.900 <small>una vez</small></p>
+      <ul>
+        <li><strong>10 informes</strong>, uno por URL que mandes</li>
+        <li>Tu nombre en el pie de cada uno, el mío en ninguno</li>
+        <li>HTML autocontenido: se abre, se imprime a PDF, se manda por mail</li>
+        <li>Entrega dentro de las 24 h hábiles de recibida la lista</li>
+      </ul>
+      <a class="btn" href="https://mpago.la/1dSkdBa">Pagar ARS 44.900</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">Kit completo</span>
+      <h3 style="margin-top:0">El generador, en tu máquina</h3>
+      <p class="price">ARS 199.000 <small>una vez</small></p>
+      <ul>
+        <li><strong>El código del auditor y del generador</strong>, tuyo, sin licencia por uso ni cuota mensual</li>
+        <li>Corre con Node, sin dependencias externas ni servicios de terceros</li>
+        <li>Tu marca y tus colores configurados adentro</li>
+        <li><strong>20 informes ya hechos</strong> por mí para que arranques hoy</li>
+        <li>Instrucciones escritas y una semana de consultas por correo</li>
+      </ul>
+      <a class="btn" href="https://mpago.la/2nmadgL">Pagar ARS 199.000</a>
+    </div>
+
+  </div>
+  <p class="note">Precios en pesos, pago por Mercado Pago (tarjeta, débito o dinero en cuenta). Sin suscripción: se paga una vez.</p>
+</section>
+
+<section>
+  <h2>Cómo sigue después de pagar</h2>
+  <p>Me escribís a <a href="mailto:vitodicino@gmail.com">vitodicino@gmail.com</a> con el comprobante, el nombre exacto que va en el pie de los informes y la lista de URLs. No hay reunión, no hay llamada, no hay formulario de alta. Si algo no se puede auditar —el sitio está caído, bloquea la descarga, no es una tienda— te lo digo y lo cambiás por otro.</p>
+
+  <h2>Garantía</h2>
+  <p>Si los informes no te sirven para entregárselos a un cliente, te devuelvo el dinero. Sin discutir y sin pedirte que justifiques nada. Es la única forma honesta de vender algo que todavía no viste funcionando en tu propia lista.</p>
+</section>
+
+<section>
+  <h2>Preguntas que me harías</h2>
+
+  <details>
+    <summary>¿El informe lleva mi logo?</summary>
+    <p>Lleva tu nombre en el pie y el encabezado sin marca mía. Si me mandás un logo y un color, te lo dejo con eso. En el lote de 10 lo hago yo; en el kit completo lo configurás vos y lo cambiás cuando quieras.</p>
+  </details>
+
+  <details>
+    <summary>¿Sirve para tiendas Tiendanube?</summary>
+    <p>Sirve, pero rinde menos: los temas actuales de Tiendanube ya resuelven solos varios de los 22 puntos, incluido el Botón de Arrepentimiento. Lo medí sobre 44 tiendas de esa plataforma. Donde más aparecen hallazgos es en sitios a medida y WooCommerce. Te lo digo para que elijas bien las URLs, no para venderte más.</p>
+  </details>
+
+  <details>
+    <summary>¿Cuánto tarda?</summary>
+    <p>La herramienta audita un sitio en segundos. Lo que tarda es la revisión a mano de cada informe antes de mandarlo, que es lo que evita que salga una afirmación falsa. Por eso el compromiso es 24 h hábiles y no "al instante".</p>
+  </details>
+
+  <details>
+    <summary>¿Por qué revisás a mano si es automático?</summary>
+    <p>Porque ya me pasó al revés. Auditando para armar esto encontré cuatro falsos positivos en mi propio código: afirmaba que faltaban datos estructurados en páginas donde la medición no alcanzaba para afirmarlo. Los corregí y regeneré los 124 informes. Un informe con un error te quema el cliente a vos, no a mí.</p>
+  </details>
+
+  <details>
+    <summary>¿Quién sos?</summary>
+    <p>Vito Odicino. Construí esta herramienta auditando 124 tiendas argentinas reales. No es una plataforma con equipo detrás: es una herramienta chica, hecha por una persona, que hace bien una cosa concreta. Prefiero decírtelo yo antes de que lo descubras vos.</p>
+  </details>
+</section>
+
+<footer>
+  <p><strong>Vito Odicino</strong> — <a href="mailto:vitodicino@gmail.com">vitodicino@gmail.com</a></p>
+  <p>El análisis lo corre una herramienta propia sobre las páginas públicas de cada sitio; los resultados se revisan a mano antes de entregar. Esto se declara siempre y no se oculta.</p>
+</footer>
+
+</div>
+</body>
+</html>
