@@ -188,3 +188,66 @@ Pediles la lista de tiendas y confirmá el plazo de 24 h por cada una. Anotalo e
 
 **d) Dicen que no.**
 Se les prometió no volver a escribir. Cumplilo.
+
+---
+
+## Rama AuditKit — agencias, segunda oferta (desde el 08/09)
+
+El 08/09 salieron **26 correos a agencias que nunca habían sido contactadas** (no son
+las 31 de G2; no hay solapamiento). El asunto de esos hilos es
+**"Una muestra del informe, con &lt;Nombre de la agencia&gt; en el pie"**.
+
+Están en `ledger/auditkit.csv`, con quién recibió y quién quedó en reserva.
+
+Qué se les ofreció, textual: el informe de 22 puntos **con el nombre de ellos en el pie
+y el de Vito en ninguna parte**, y a cada una se le mandó una muestra publicada con su
+propio nombre ya puesto, en
+`https://vitodicino-dotcom.github.io/auditoria-express/auditkit/m/<slug>.html`.
+
+La página de la oferta es
+https://vitodicino-dotcom.github.io/auditoria-express/auditkit/
+
+### Precios que se les ofreció
+
+| Qué | Precio | Link |
+|---|---|---|
+| Un informe con su marca | ARS 44.900 | https://mpago.la/1dSkdBa |
+| 10 informes **+ el generador para que lo corran ellos** | ARS 199.000 | https://mpago.la/2nmadgL |
+
+**Esto es lo más importante de esta sección.** Los dos links de Mercado Pago son los
+mismos que usan las otras dos ofertas. Un pago de ARS 199.000 puede ser tres cosas
+distintas y **el monto no alcanza para saber cuál**:
+
+| Si el hilo es de… | ARS 44.900 significa | ARS 199.000 significa |
+|---|---|---|
+| un comercio (EXP-01) | Auditoría Express de su tienda | Auditoría + Implementación |
+| una agencia de G2 | 1 informe suelto | lote de 10 informes |
+| una agencia de AuditKit | 1 informe con su marca | 10 informes **+ el código del generador** |
+
+Antes de confirmar cualquier cosa, mirá de qué hilo salió y qué asunto tiene. Si no
+podés determinarlo con certeza, no inventes: preguntale al que pagó qué compró.
+
+### Qué hacer con cada respuesta
+
+**a) Pagan.**
+Pediles: (1) el nombre exacto que va en el pie de los informes, (2) la lista de URLs.
+Confirmá el plazo: 24 h hábiles desde que llega la lista. Anotalo en Notion con monto,
+fecha y qué compró. **El generador se lo entrega Vito, no vos:** no tenés el repositorio.
+
+**b) Preguntan por el entregable o quieren ver más.**
+Mandales el link de su propia muestra (está en `ledger/auditkit.csv` o se arma con el
+slug). **Nunca les mandes el informe de un comercio real:** son mediciones sobre sitios
+de terceros que no pidieron circular como material de venta de nadie.
+
+**c) Preguntan si mide posicionamiento en ChatGPT / IA.**
+La respuesta es **no**, y se dice sin adornos. La herramienta mide señales técnicas
+públicas y nada más. La página de la oferta ya lo dice; no lo contradigas para cerrar
+una venta.
+
+**d) Preguntan por qué el precio no coincide con un correo anterior.**
+Sólo puede pasarle a alguien de G2, y la respuesta es simple y verdadera: los dos
+precios son los mismos de siempre; lo único que cambió es que el de ARS 199.000 ahora
+incluye además el generador.
+
+**e) Dicen que no.**
+Se les prometió no volver a escribir. Cumplilo.
